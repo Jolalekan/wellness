@@ -4,11 +4,6 @@ import Container from "./Container";
 const DataProtection = () => {
   return (
     <div className="bg-white pt-16 pb-10 ">
-      {/* <div  className="relative left-1/2 -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#f8f5f6] to-[#9089fc] opacity-30 sm:left-1/2 sm:w-[72.1875rem] aspect-[1155/678] w-[36.125rem]"
-        style={{
-          clipPath:
-            "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-        }}/> */}
       <Container>
         <div className="p-4 lg:flex flex-col gap-6">
           <div className="lg:flex mb-6 gap-5">
@@ -33,13 +28,13 @@ const DataProtection = () => {
                 </div>
               </div>
             </div>
-            <div className=" flex-1 p-6 h-[600px] bg-teal-50 rounded-md">
+            <div className=" flex-1 p-6 h-[500px] lg:h-[600px] bg-teal-50 rounded-md">
               <div className="gap-10 items-start flex flex-col text-gray-900">
-                <div className="bg-white p-2 rounded-md">
+                <div className="bg-white p-4 rounded-md">
                   <img src="/assets/stock.png" width={24} height={24} alt="" />
                 </div>
                 <div className="flex flex-col gap-1">
-                  <h3 className="text-gray7600 font-medium text-[24px]">
+                  <h3 className="text-gray-600 font-medium text-[24px]">
                     Goal Setting & Progress Tracking
                   </h3>
                   <p className="text-[14px] text-gray-600">
@@ -53,16 +48,16 @@ const DataProtection = () => {
                   </p>
                 </div>
               </div>
-              <div className="lg:ml-8 mt-16 ">
-                <div className="relative w-[160px] lg:w-[300px] h-[300px]">
+              <div className=" lg:ml-8 mt-16">
+                <div className="relative h-[full] w-[full]  overflow-hidden ">
                   <img
                     src="/assets/shipping.jpg"
-                    className="object-cover rounded-lg"
-                    alt=""
+                    className="object-cover h-full w-full rounded-lg"
+                    alt="charts"
                   />
                   <img
                     src="/assets/chart.jpg"
-                    className="absolute top-16 lg:top-32 left-28 "
+                    className="h-full w-full hidden lg:block absolute top-16 lg:top-32 left-24 "
                     alt=""
                   />
                 </div>

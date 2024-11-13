@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
+import gsap from 'gsap';
+import React, { useRef, useState } from 'react';
 
 const Navbar = () => {
+  const navRef = useRef()
   const [open, setOpen] = useState(false);
 
+  gsap.to(target, {
+duration:2.5,
+ease: CustomEase.create("custom", "M0,0,C0.126,0.382,0.282,0.674,0.44,0.822,0.632,1.002,0.818,1.001,1,1"),
+y: -500
+});
+
   return (
-    <div className='bg-teal-900 top-0 z-10 fixed w-full py-4'>
+    <div className='bg-teal-950 border-b border-gray-50 top-0 z-10 fixed w-full py-4'>
 
     <header className=" max-w-7xl mx-auto w-full inset-x-0 top-0 z-50">
       <nav className="flex items-center justify-between p-6 lg:px-8">
