@@ -1,11 +1,32 @@
-import React from 'react'
-import Container from './Container'
+import React, { useEffect, useRef } from 'react'
+import gsap from 'gsap';
 
 const Hero = () => {
-  return (
+  const textRef = useRef(null);
+    const imageRef = useRef(null);
+    
+    
+    useEffect(()=>{
+        if (textRef.current) {
+            gsap.fromTo(
+              textRef.current,
+              { x: -200, opacity: 0 }, // Start from the left off-screen
+              { x: 0, opacity: 1, duration: 1, ease: 'power3.out' } // Slide in to its normal position
+            );
+          }
+          if(imageRef.current){
+            gsap.fromTo(
+                imageRef.current, 
+                { y:200, opacity:0},
+                {y:0, opacity: 1, duration: 1, ease: 'power3.out' }
+            )
+          }
+    }, [])
+
+    return (
     <div className=' h-screen'>
         <div className='h-full pt-24  lg:flex gap-6 '>
-            <div className='h-full p-6 pt-6 lg:pl-64 flex-1 flex   flex-col gap-5 '>
+            <div ref={textRef} className='h-full p-6 pt-6 lg:pl-64 flex-1 flex   flex-col gap-5 '>
                 <h2 className='text-5xl lg:text-8xl font-medium'>Secure, Grow, <br /> and Prosper <br /> with Us</h2>
                 
                 <div className='lg:max-w-3xl flex flex-col items- gap-6'>
@@ -26,7 +47,7 @@ const Hero = () => {
             </div>
                 </div>
 
-            <div className='hidden lg:block flex-1 justify-end w-full h-full'>
+            <div ref={imageRef} className='hidden lg:block flex-1 justify-end w-full h-full'>
            
                 <img src="\assets\phonebank.png"  className='object-cover w-full h-full' alt="" />
             </div>
