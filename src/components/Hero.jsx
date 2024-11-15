@@ -34,8 +34,8 @@ const Hero = () => {
 
                 <div className='flex justify-between w-full'>
                     <div className='p-1 rounded-md  flex border lg:gap-6'>
-                    <input type="text"placeholder='Enter your Email' className='px-2 bg-transparent text-gray-100 focus:outline-none'/>
-                    <button className='text-gray-500 px-1 font-medium py-1 rounded-md bg-white'>Get Started</button>
+                    <input type="text"placeholder='Enter your Email' className='text-[12px] lg:text-[16px] px-2 bg-transparent text-gray-100 focus:outline-none'/>
+                    <button className='text-gray-500 px-1 font-medium py-1 rounded-md bg-white text-[16px]'>Get Started</button>
                     </div>
                 </div>
                 <div className='pt-6 flex items-center gap-2'>
