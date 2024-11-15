@@ -32,9 +32,8 @@ const Hero = () => {
                 <div className='lg:max-w-3xl flex flex-col items- gap-6'>
                 <p className='text-[15px] text-gray-100'>Lorem, ipsum dolor sit amet consectetur  elit. <br /> Consectetur sint cumque minus. porro nobis, <br /> fuga aliquam aut animi  dolore dolorum </p>
 
-                <div className='flex'>
-                    <div className='p-1 rounded-md  flex border lg:gap-6 lg:max-w-3xl'>
-
+                <div className='flex justify-between w-full'>
+                    <div className='p-1 rounded-md  flex border lg:gap-6 '>
                     <input type="text"placeholder='Enter your Email' className='px-2 bg-transparent text-gray-800 focus:outline-none'/>
                     <button className='text-gray-500 px-1 font-medium py-1 rounded-md bg-white'>Get Started</button>
                     </div>
