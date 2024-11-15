@@ -26,7 +26,7 @@ const Hero = () => {
     return (
     <div className=' h-screen'>
         <div className='h-full pt-32  lg:flex gap-6 '>
-            <div ref={textRef} className='h-full p-6 pt-6 lg:pl-32 flex-1 flex   flex-col gap-5 '>
+            <div ref={textRef} className='h-full p-6 pt-6 lg:pl-24 flex-1 flex   flex-col gap-5 '>
                 <h2 className='text-5xl lg:text-8xl font-medium'>Secure, Grow, <br /> and Prosper <br /> with Us</h2>
                 
                 <div className='lg:max-w-3xl flex flex-col items- gap-6'>
