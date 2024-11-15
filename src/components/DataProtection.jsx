@@ -7,8 +7,8 @@ const DataProtection = () => {
       <Container>
         <div className="p-4 lg:flex flex-col gap-6">
           <div className="lg:flex mb-6 gap-5">
-            <div className="flex-1 mb-6 p-6 h-[400px] bg-teal-50 rounded-md">
-              <div className="gap-4 items-start flex flex-col text-gray-900">
+            <div className=" overflow-hidden flex-1 mb-6 p-6 h-[500px] lg:h-[600px] bg-gray-50 rounded-md">
+              <div className=" gap-4 items-start flex flex-col text-gray-900">
                 <div className="bg-white p-2 rounded-md">
                   <img src="/assets/secure.png" width={24} height={24} alt="" />
                 </div>
@@ -26,6 +26,22 @@ const DataProtection = () => {
                     Data Privacy for peace of mind
                   </p>
                 </div>
+
+                <div className="w-full">
+                  <div className="flex justify-evenly items-center">
+                    <div className="mt-10">
+                      <img src="/assets/pss.png" className="w-16 h-16" alt="" />
+                    </div>
+                    <div className="">
+                      <img
+                        src="/assets/secu.png"
+                        className="w-40 h-40"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div><img src="/assets/secur.png" className="object-cover" alt="" /></div>
               </div>
             </div>
             <div className=" flex-1 p-6 h-[500px] lg:h-[600px] bg-teal-50 rounded-md">

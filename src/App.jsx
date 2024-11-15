@@ -19,7 +19,7 @@ function App() {
      <Counting/>
     <Service/>
     <Investor/>
-    {/*<Payment/>*/}
+    <Payment/>
     <Footer/>  
     </>
   )
