@@ -79,14 +79,14 @@ const Navbar = () => {
           <div ref={logoRef} className="flex items-center gap-3 lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <img
-                className="h-8 w-auto"
+                className="h-16 w-auto"
                 src="/assets/logo.png"
                 width={60}
                 height={60}
                 alt="Logo"
               />
             </a>
-            <span className="font-medium text-gray-100">Wellness</span>
+            <span className="text-[26px] font-medium text-gray-100">Wellness</span>
           </div>
 
           {/* Mobile Menu Button */}
@@ -113,7 +113,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop links */}
-          <div ref={navLinksRef} className="hidden lg:flex lg:gap-x-12">
+          <div ref={navLinksRef} className="navbar-links hidden lg:flex lg:gap-x-12">
             <a href="#" className="text-[18px] font-semibold text-gray-100">Home</a>
             <a href="#" className="text-[18px] font-semibold text-gray-100">Comparison</a>
             <a href="#" className="text-[18px] font-semibold text-gray-100">Resources</a>
@@ -121,12 +121,12 @@ const Navbar = () => {
           </div>
 
           {/* Desktop user actions */}
-          <div className="hidden lg:flex gap-6 lg:flex-1 items-center lg:justify-end">
+          <div className="login-link hidden lg:flex gap-6 lg:flex-1 items-center lg:justify-end">
             <div className="flex items-center gap-2">
               <img src="/assets/world.png" width={20} height={20} alt="Language" />
               <span className="text-[18px] font-semibold text-gray-100">English</span>
             </div>
-            <a href="#" className="text-[18px] font-semibold text-gray-100">
+            <a href="#" className="login-link text-[18px] font-semibold text-gray-100">
               Log in <span>&rarr;</span>
             </a>
             <button className="rounded-md bg-gray-50 py-2 px-4 text-gray-900 font-medium">

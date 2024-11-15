@@ -34,9 +34,9 @@ const Service = () => {
             <div className='px-2 justify-between items-center rounded-2xl bg-white flex gap-6'>
                <div className='flex items-center gap-6'>
 
-                <img src="/assets/stock.png" width={28} height={28} alt="" />
+                <img src="/assets/grow.png" width={28} height={28} alt="" />
                 <div >
-                    <h3 className='font-medium text-[14px]'>Amazon</h3>
+                    <h3 className='font-medium text-[14px]'>Grow</h3>
                     <p className='text-gray-500 text-sm'>Staff Delivered</p>
                </div>
                 </div>
